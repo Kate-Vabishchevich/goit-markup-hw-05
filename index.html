@@ -64,11 +64,6 @@
             Замовити послугу
           </button>
         </div>
-        <!--модальне вікно-->
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button data-modal-close>Закрити</button>
-          </div>
         </div>
       </section>
       <!--особливості-->
@@ -135,28 +130,34 @@
           <h2 class="doing-title">Чим ми займаємося</h2>
           <ul class="doing-list list">
             <li class="doing-item">
-              <img
+              <div class="doing-top-wrap"><img
                 src="./images/box1.jpg"
                 alt="на клавиатуре набирают код перед планшетом"
                 width="370"
                 height="294"
               />
+              <p class="doing-top-text">Десктопні додатки</p></div>
+              
             </li>
             <li class="doing-item">
-              <img
+              <div class="doing-top-wrap"><img
                 src="./images/box2.jpg"
                 alt="в левой руке смартфон, правая рука печатает на клавиатуре"
                 width="370"
                 height="294"
               />
+              <p class="doing-top-text">Мобільні додатки</p></div>
+              
             </li>
             <li class="doing-item">
-              <img
+              <div class="doing-top-wrap"><img
                 src="./images/box3.jpg"
                 alt="цветовая схема в виде сот на планшете"
                 width="370"
                 height="294"
               />
+              <p class="doing-top-text">Дизайнерські рішення</p></div>
+              
             </li>
           </ul>
         </div>
@@ -462,6 +463,14 @@
         </div>
       </div>
     </footer>
+      <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="modal-btn" data-modal-close>
+              <svg class="icon-close" width="11" height="11">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
